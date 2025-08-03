@@ -517,16 +517,175 @@ var films = [
 2) by using this array you created in the first question, you will print the numbers that can be divided by 5 to the console using the 'for each' method
 */
 
-var num = [];
+// var num = [];
 
-for (var i = 0; i <= 20; i++) {
-  num.push(i);
-}
+// for (var i = 0; i <= 20; i++) {
+//   num.push(i);
+// }
 
-console.log(num);
+// console.log(num);
 
-num.forEach(function (n) {
-  if (n % 5 === 0) {
-    console.log(n);
-  }
-});
+// num.forEach(function (n) {
+//   if (n % 5 === 0) {
+//     console.log(n);
+//   }
+// });
+
+//* Objects
+// var student = new Object();
+// student.name = "Eren"; // or
+
+// var schoolName = "school";
+
+// var student = {
+//   name: "Eren",
+//   age: 18,
+//   school: "MIT",
+// };
+
+// console.log(student["name"]);
+// console.log(student.school);
+
+// console.log(student[schoolName]);
+
+// var Mikasa = {
+//   name: "Mikasa",
+//   age: 18,
+//   school: "MIT",
+// };
+
+// Mikasa.age += 1;
+// console.log(Mikasa.age);
+
+// Mikasa["school"] = "IITB";
+// console.log(Mikasa["school"]);
+
+// var student12 = {
+//   name: "Annie",
+//   age: 20,
+//   friends: ["berthold", "reiner", "connie"],
+//   bestFriend: {
+//     name: "Berthold",
+//     age: 21,
+//   },
+// };
+
+// var bestFriendOfStudent12 = student12.bestFriend.name;
+// console.log(bestFriendOfStudent12);
+
+// var friend2 = student12.friends[1];
+// console.log(friend2);
+
+// // how to add property to objects
+// var colors = {};
+
+// colors.orange = { code: 123 };
+// console.log(colors.orange.code);
+
+// colors.black = { code: [4, 5, 6] };
+// console.log(colors.black.code[1]);
+
+// var blogPosts = [
+//   {
+//     title: "Weather",
+//     content: "It is rainy today.",
+//     comments: [
+//       {
+//         name: "Eren",
+//         lastName: "Yeager",
+//       },
+//       {
+//         name: "Mikasa",
+//         lastName: "Ackerman",
+//       },
+//     ],
+//   },
+//   {
+//     title: "Weather",
+//     content: "I don't like weather.",
+//   },
+// ];
+
+// console.log(blogPosts[0].title);
+// console.log(blogPosts[0].comments[1].name);
+
+/*
+1) Create an array of objects called 'universities'.
+Every object needs to have 'name', 'hasGone' and 'year' properties.
+Loop over this array and if 'hasGone' value is true then print a statement to the console which includes 'name' and 'year' properties.
+If 'hasGone' is false, just print the 'name' property to the console.
+*/
+
+// var universities = [
+//   {
+//     name: "MIT",
+//     hasGone: false,
+//     year: 1890,
+//   },
+//   {
+//     name: "Harvard",
+//     hasGone: true,
+//     year: 1900,
+//   },
+//   {
+//     name: "Oxford",
+//     hasGone: true,
+//     year: 1800,
+//   },
+// ];
+
+// universities.forEach(function (university) {
+//   if (university.hasGone === true) {
+//     console.log(university.name + " - " + university.year);
+//   } else {
+//     console.log(university.name);
+//   }
+// });
+
+// // Object Methods
+// var Eren = {
+//   name: "Eren",
+//   age: 19,
+//   hasGone: true,
+//   friends: ["Mikasa", "Armin"],
+//   say: function () {
+//     console.log("say hi Eren");
+//   },
+// };
+
+// Eren.say();
+
+// var Armin = {
+//   name: "Armin",
+//   say: function () {
+//     console.log("Say hi Armin");
+//   },
+// };
+
+// Armin.say();
+
+// // This Keyword
+// console.log(this);
+
+// function addNumber(x, y) {
+//   console.log(x + y);
+//   console.log(this);
+// }
+
+// addNumber(10 + 20);
+
+// var Armin = {
+//   name: "Armin",
+//   year: 840,
+//   sayHi: function () {
+//     console.log(this);
+//     console.log("Say hi, " + this.name);
+
+//     function someFunc() {
+//       console.log(this);
+//     }
+//     someFunc();
+//   },
+// };
+
+// Armin.sayHi();
