@@ -413,26 +413,62 @@ Nancy's grades are 42,98,83
 // doSomething();
 
 //* Arrays
+// var students = ["Eren", "Mikasa", "Armin", "Levi"];
+
+// console.log(students);
+// console.log(students[0]);
+
+// students[0] = "Hange";
+// console.log(students);
+
+// students[4] = "Jean";
+// console.log(students);
+
+// students[7] = "Sasha";
+// console.log(students);
+
+// var titans = [];
+// var titans = new Array();
+
+// var commonData = ["Eren", 18, true, null];
+// commonData[1];
+
+// var cars = ["Rolls Royce", "BMW", "Mercedes", "Audi"];
+// var cars_length = cars.length;
+// console.log(cars_length);
+
+//? Array Methods
 var students = ["Eren", "Mikasa", "Armin", "Levi"];
 
-console.log(students);
-console.log(students[0]);
-
-students[0] = "Hange";
+// push method
+students.push("Hange");
 console.log(students);
 
-students[4] = "Jean";
+// pop method
+students.pop();
 console.log(students);
 
-students[7] = "Sasha";
+var removedStudent = students.pop();
+console.log(removedStudent);
 console.log(students);
 
-var titans = [];
-var titans = new Array();
+// unshift method, adds an element to the beginning of the array
+var titans = ["Attack", "Jaw", "Armored"];
+titans.unshift("Colossal");
+console.log(titans);
 
-var commonData = ["Eren", 18, true, null];
-commonData[1];
+// shift method, removes the first element of the array
+titans.shift();
+console.log(titans);
 
-var cars = ["Rolls Royce", "BMW", "Mercedes", "Audi"];
-var cars_length = cars.length;
-console.log(cars_length);
+// indexOf
+console.log(students.indexOf("Mikasa"));
+
+// slice method
+var friends = ["Jean", "Sasha", "Connie", "Historia"];
+var closeFriends = friends.slice(1, 3);
+console.log(friends);
+console.log(closeFriends);
+
+var otherFriends = friends.slice();
+console.log(otherFriends);
