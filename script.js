@@ -485,14 +485,48 @@ var films = [
 2) Print the godFather2 film from the films array to the console
 */
 
-var books = ["Harry Potter", "Hobbit", "Hunger Games", "Little Prince"];
-var lastBook = books.length;
-console.log(books[lastBook - 1]);
-console.log(books[lastBook - 2]);
+// var books = ["Harry Potter", "Hobbit", "Hunger Games", "Little Prince"];
+// var lastBook = books.length;
+// console.log(books[lastBook - 1]);
+// console.log(books[lastBook - 2]);
 
-var films = [
-  [" hobbit1", "hobbit2", "hobbit3"],
-  ["matrix1", "matrix2", "matrix3"],
-  ["godFather1", "godFather2", "godFather3"],
-];
-console.log(films[2][1]);
+// var films = [
+//   [" hobbit1", "hobbit2", "hobbit3"],
+//   ["matrix1", "matrix2", "matrix3"],
+//   ["godFather1", "godFather2", "godFather3"],
+// ];
+// console.log(films[2][1]);
+
+// // Array iteration
+// var books = ["Harry Potter", "Hobbit", "Hunger Games", "Little Prince"];
+
+// for (var i = 0; i < books.length; i++) {
+//   console.log(books[i]);
+// }
+
+// books.forEach(function (book) {
+//   console.log(book);
+// });
+//? or
+// books.forEach((book) => {
+//   console.log(book);
+// });
+
+/*
+1) create an array which includes numbers between 0 and 20 by using 'push' method.
+2) by using this array you created in the first question, you will print the numbers that can be divided by 5 to the console using the 'for each' method
+*/
+
+var num = [];
+
+for (var i = 0; i <= 20; i++) {
+  num.push(i);
+}
+
+console.log(num);
+
+num.forEach(function (n) {
+  if (n % 5 === 0) {
+    console.log(n);
+  }
+});
