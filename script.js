@@ -437,38 +437,62 @@ Nancy's grades are 42,98,83
 // var cars_length = cars.length;
 // console.log(cars_length);
 
-//? Array Methods
-var students = ["Eren", "Mikasa", "Armin", "Levi"];
+// //? Array Methods
+// var students = ["Eren", "Mikasa", "Armin", "Levi"];
 
-// push method
-students.push("Hange");
-console.log(students);
+// // push method
+// students.push("Hange");
+// console.log(students);
 
-// pop method
-students.pop();
-console.log(students);
+// // pop method
+// students.pop();
+// console.log(students);
 
-var removedStudent = students.pop();
-console.log(removedStudent);
-console.log(students);
+// var removedStudent = students.pop();
+// console.log(removedStudent);
+// console.log(students);
 
-// unshift method, adds an element to the beginning of the array
-var titans = ["Attack", "Jaw", "Armored"];
-titans.unshift("Colossal");
-console.log(titans);
+// // unshift method, adds an element to the beginning of the array
+// var titans = ["Attack", "Jaw", "Armored"];
+// titans.unshift("Colossal");
+// console.log(titans);
 
-// shift method, removes the first element of the array
-titans.shift();
-console.log(titans);
+// // shift method, removes the first element of the array
+// titans.shift();
+// console.log(titans);
 
-// indexOf
-console.log(students.indexOf("Mikasa"));
+// // indexOf
+// console.log(students.indexOf("Mikasa"));
 
-// slice method
-var friends = ["Jean", "Sasha", "Connie", "Historia"];
-var closeFriends = friends.slice(1, 3);
-console.log(friends);
-console.log(closeFriends);
+// // slice method
+// var friends = ["Jean", "Sasha", "Connie", "Historia"];
+// var closeFriends = friends.slice(1, 3);
+// console.log(friends);
+// console.log(closeFriends);
 
-var otherFriends = friends.slice();
-console.log(otherFriends);
+// var otherFriends = friends.slice();
+// console.log(otherFriends);
+
+/*
+var books = ['Harry Potter', 'Hobbit', 'Hunger Games', 'Little Prince'];
+1) Access the last, and the second last element of the books array using the length of the array and print it to the console
+
+var films = [
+  [' hobbit1', 'hobbit2', 'hobbit3'],
+  ['matrix1', 'matrix2', 'matrix3'],
+  ['godFather1', 'godFather2', 'godFather3']
+]
+2) Print the godFather2 film from the films array to the console
+*/
+
+var books = ["Harry Potter", "Hobbit", "Hunger Games", "Little Prince"];
+var lastBook = books.length;
+console.log(books[lastBook - 1]);
+console.log(books[lastBook - 2]);
+
+var films = [
+  [" hobbit1", "hobbit2", "hobbit3"],
+  ["matrix1", "matrix2", "matrix3"],
+  ["godFather1", "godFather2", "godFather3"],
+];
+console.log(films[2][1]);
