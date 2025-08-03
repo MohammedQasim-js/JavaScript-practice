@@ -400,14 +400,39 @@ Nancy's grades are 42,98,83
 // saySentence();
 // console.log(sentence);
 
-function writeNumber() {
-  var myx = 26;
-  console.log(myx);
-}
+// function writeNumber() {
+//   var myx = 26;
+//   console.log(myx);
+// }
 
-function doSomething() {
-  console.log(myx);
-}
+// function doSomething() {
+//   console.log(myx);
+// }
 
-writeNumber();
-doSomething();
+// writeNumber();
+// doSomething();
+
+//* Arrays
+var students = ["Eren", "Mikasa", "Armin", "Levi"];
+
+console.log(students);
+console.log(students[0]);
+
+students[0] = "Hange";
+console.log(students);
+
+students[4] = "Jean";
+console.log(students);
+
+students[7] = "Sasha";
+console.log(students);
+
+var titans = [];
+var titans = new Array();
+
+var commonData = ["Eren", 18, true, null];
+commonData[1];
+
+var cars = ["Rolls Royce", "BMW", "Mercedes", "Audi"];
+var cars_length = cars.length;
+console.log(cars_length);
